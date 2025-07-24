@@ -73,7 +73,7 @@ export default function PublicationModal({ isOpen, onClose, publication }: Publi
         <div className="sticky bottom-0 bg-gray-50 border-t border-gray-200 p-6 text-right">
           <button
             onClick={onClose}
-            className="bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition-colors"
+            className="bg-dark-blue-800 text-white px-6 py-2 rounded-lg hover:bg-dark-blue-900 transition-colors"
           >
             닫기
           </button>

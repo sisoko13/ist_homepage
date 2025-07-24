@@ -76,8 +76,8 @@ export default function ContactSection() {
       <section className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-blue-700 mb-4">Contact</h2>
-            <div className="w-24 h-1 bg-blue-700 mx-auto mb-6"></div>
+            <h2 className="text-4xl font-bold text-dark-blue-800 mb-4">Contact</h2>
+            <div className="w-24 h-1 bg-dark-blue-800 mx-auto mb-6"></div>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               IST Lab에 문의사항이 있으시면 언제든지 연락해 주세요.
             </p>
@@ -87,10 +87,10 @@ export default function ContactSection() {
             {/* Contact Information */}
             <div>
               <div className="bg-white rounded-lg shadow-xl p-8 h-full">
-                <h3 className="text-2xl font-bold text-blue-700 mb-6">연락처 정보</h3>
+                <h3 className="text-2xl font-bold text-dark-blue-800 mb-6">연락처 정보</h3>
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-blue-700 rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-dark-blue-800 rounded-full flex items-center justify-center flex-shrink-0">
                       <MapPin className="w-6 h-6 text-white" />
                     </div>
                     <div>
@@ -104,7 +104,7 @@ export default function ContactSection() {
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-dark-blue-700 rounded-full flex items-center justify-center flex-shrink-0">
                       <Phone className="w-6 h-6 text-white" />
                     </div>
                     <div>
@@ -114,7 +114,7 @@ export default function ContactSection() {
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-blue-800 rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-dark-blue-900 rounded-full flex items-center justify-center flex-shrink-0">
                       <Mail className="w-6 h-6 text-white" />
                     </div>
                     <div>
@@ -124,7 +124,7 @@ export default function ContactSection() {
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-dark-blue-800 rounded-full flex items-center justify-center flex-shrink-0">
                       <Clock className="w-6 h-6 text-white" />
                     </div>
                     <div>
@@ -148,14 +148,14 @@ export default function ContactSection() {
             {/* Contact Form */}
             <div>
               <div className="bg-white rounded-lg shadow-xl p-8 h-full">
-                <h3 className="text-2xl font-bold text-blue-700 mb-6">문의하기</h3>
+                <h3 className="text-2xl font-bold text-dark-blue-800 mb-6">문의하기</h3>
                 <form className="space-y-6">
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">이름 *</label>
                     <input
                       type="text"
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-dark-blue-600 focus:border-transparent"
                       placeholder="이름을 입력하세요"
                     />
                   </div>
@@ -165,7 +165,7 @@ export default function ContactSection() {
                     <input
                       type="email"
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-dark-blue-600 focus:border-transparent"
                       placeholder="이메일을 입력하세요"
                     />
                   </div>
@@ -174,7 +174,7 @@ export default function ContactSection() {
                     <label className="block text-sm font-medium text-gray-700 mb-2">소속/직책</label>
                     <input
                       type="text"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-dark-blue-600 focus:border-transparent"
                       placeholder="소속이나 직책을 입력하세요"
                     />
                   </div>
@@ -184,7 +184,7 @@ export default function ContactSection() {
                     <input
                       type="text"
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-dark-blue-600 focus:border-transparent"
                       placeholder="제목을 입력하세요"
                     />
                   </div>
@@ -194,14 +194,14 @@ export default function ContactSection() {
                     <textarea
                       required
                       rows={5}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-vertical"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-dark-blue-600 focus:border-transparent resize-vertical"
                       placeholder="문의 내용을 입력하세요"
                     ></textarea>
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full bg-blue-700 text-white py-3 px-6 rounded-lg hover:bg-blue-800 transition-colors font-medium"
+                    className="w-full bg-dark-blue-800 text-white py-3 px-6 rounded-lg hover:bg-dark-blue-900 transition-colors font-medium"
                   >
                     메시지 보내기
                   </button>
@@ -212,13 +212,13 @@ export default function ContactSection() {
 
           {/* Quick Contact Cards */}
           <div className="mt-16 grid md:grid-cols-3 gap-6">
-            <div className="bg-blue-50 rounded-lg p-6 text-center">
-              <div className="w-16 h-16 bg-blue-700 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="bg-dark-blue-50 rounded-lg p-6 text-center">
+              <div className="w-16 h-16 bg-dark-blue-800 rounded-full flex items-center justify-center mx-auto mb-4">
                 <GraduationCap className="w-8 h-8 text-white" />
               </div>
               <h4 className="font-bold text-gray-800 mb-2">대학원 입학 문의</h4>
               <p className="text-gray-600 text-sm mb-4">석사/박사 과정 입학에 관한 문의사항</p>
-              <button className="text-blue-700 font-medium hover:text-blue-800">자세히 보기 →</button>
+              <button className="text-dark-blue-800 font-medium hover:text-dark-blue-900">자세히 보기 →</button>
             </div>
 
             <div className="bg-green-50 rounded-lg p-6 text-center">
