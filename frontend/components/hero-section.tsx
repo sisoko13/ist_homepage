@@ -1,10 +1,10 @@
 export default function HeroSection() {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-blue-700 to-blue-500 flex items-center justify-center">
+    <section className="min-h-screen bg-gradient-to-br from-dark-blue-800 to-dark-blue-600 flex items-center justify-center">
       <div className="text-center text-white px-4 max-w-4xl">
         <div className="mb-8">
           <div className="w-32 h-32 mx-auto mb-6 bg-white rounded-full flex items-center justify-center shadow-2xl">
-            <div className="text-blue-700 text-6xl font-bold">IST</div>
+            <div className="text-dark-blue-800 text-6xl font-bold">IST</div>
           </div>
         </div>
         <h1 className="text-5xl md:text-6xl font-bold mb-4">IST Lab</h1>

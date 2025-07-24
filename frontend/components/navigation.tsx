@@ -46,14 +46,14 @@ export default function Navigation({ activeSection, setActiveSection }: Navigati
   }
 
   return (
-    <nav className="fixed top-0 w-full bg-blue-700 text-white shadow-lg z-50">
+    <nav className="fixed top-0 w-full bg-dark-blue-800 text-white shadow-lg z-50">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
             <button
               onClick={() => setActiveSection("home")}
-              className="text-xl font-bold hover:text-blue-200 transition-colors"
+              className="text-xl font-bold hover:text-dark-blue-200 transition-colors"
             >
               IST Lab
             </button>
@@ -66,7 +66,7 @@ export default function Navigation({ activeSection, setActiveSection }: Navigati
                 key={item.id}
                 onClick={() => setActiveSection(item.id)}
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                  activeSection === item.id ? "text-white font-bold" : "text-blue-200 hover:text-white"
+                  activeSection === item.id ? "text-white font-bold" : "text-dark-blue-200 hover:text-white"
                 }`}
               >
                 {item.label}
@@ -87,7 +87,7 @@ export default function Navigation({ activeSection, setActiveSection }: Navigati
                 />
                 <button
                   onClick={handleAdminLogin}
-                  className="bg-white text-blue-700 px-2 py-1 rounded-md text-sm hover:bg-gray-100"
+                  className="bg-white text-dark-blue-800 px-2 py-1 rounded-md text-sm hover:bg-gray-100"
                 >
                   인증
                 </button>
@@ -122,7 +122,7 @@ export default function Navigation({ activeSection, setActiveSection }: Navigati
                   setIsMobileMenuOpen(false)
                 }}
                 className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left ${
-                  activeSection === item.id ? "text-white font-bold" : "text-blue-200 hover:text-white"
+                  activeSection === item.id ? "text-white font-bold" : "text-dark-blue-200 hover:text-white"
                 }`}
               >
                 {item.label}
@@ -141,7 +141,7 @@ export default function Navigation({ activeSection, setActiveSection }: Navigati
                 />
                 <button
                   onClick={handleAdminLogin}
-                  className="w-full bg-white text-blue-700 px-2 py-1 rounded-md text-sm hover:bg-gray-100"
+                  className="w-full bg-white text-dark-blue-800 px-2 py-1 rounded-md text-sm hover:bg-gray-100"
                 >
                   인증
                 </button>

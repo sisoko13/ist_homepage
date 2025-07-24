@@ -125,8 +125,8 @@ export default function NewsSection() {
     <section className="py-16 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-blue-700 mb-4">News & Updates</h2>
-          <div className="w-24 h-1 bg-blue-700 mx-auto mb-6"></div>
+          <h2 className="text-4xl font-bold text-dark-blue-800 mb-4">News & Updates</h2>
+          <div className="w-24 h-1 bg-dark-blue-800 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">IST Lab의 최신 연구 성과와 소식을 확인하세요.</p>
         </div>
 
@@ -134,7 +134,7 @@ export default function NewsSection() {
           <div className="mb-6 text-right">
             <button
               onClick={() => setIsAddModalOpen(true)}
-              className="bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition-colors font-medium"
+              className="bg-dark-blue-800 text-white px-4 py-2 rounded-lg hover:bg-dark-blue-900 transition-colors font-medium"
             >
               + 뉴스 등록
             </button>
@@ -178,7 +178,7 @@ export default function NewsSection() {
                       {item.author}
                     </div>
                     <div className="flex items-center">
-                      <button className="flex items-center text-blue-700 hover:text-blue-800 font-medium">
+                      <button className="flex items-center text-dark-blue-800 hover:text-dark-blue-900 font-medium">
                         자세히 보기
                         <ArrowRight className="w-4 h-4 ml-1" />
                       </button>
@@ -242,7 +242,7 @@ export default function NewsSection() {
                   )}
                   <div className="mt-4 md:mt-0 md:ml-6">
                     <div className="flex items-center">
-                      <button className="flex items-center text-blue-700 hover:text-blue-800 font-medium">
+                      <button className="flex items-center text-dark-blue-800 hover:text-dark-blue-900 font-medium">
                         자세히 보기
                         <ArrowRight className="w-4 h-4 ml-1" />
                       </button>
@@ -271,7 +271,7 @@ export default function NewsSection() {
       {isAdmin && isAddModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-lg w-full max-w-2xl p-6">
-            <h3 className="text-xl font-bold text-blue-700 mb-4">뉴스 등록</h3>
+            <h3 className="text-xl font-bold text-dark-blue-800 mb-4">뉴스 등록</h3>
             <form className="space-y-4" onSubmit={handleSubmit}>
               <input name="title" type="text" placeholder="제목" className="w-full border px-3 py-2 rounded" />
               <textarea name="summary" placeholder="요약" className="w-full border px-3 py-2 rounded" rows={3} />
@@ -300,7 +300,7 @@ export default function NewsSection() {
                 >
                   취소
                 </button>
-                <button type="submit" className="px-4 py-2 rounded bg-blue-700 text-white hover:bg-blue-800">
+                <button type="submit" className="px-4 py-2 rounded bg-dark-blue-800 text-white hover:bg-dark-blue-900">
                   등록
                 </button>
               </div>

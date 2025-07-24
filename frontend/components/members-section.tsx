@@ -38,14 +38,14 @@ export default function MembersSection() {
     <section className="py-16 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-blue-700 mb-4">Members</h2>
-          <div className="w-24 h-1 bg-blue-700 mx-auto mb-6"></div>
+          <h2 className="text-4xl font-bold text-dark-blue-800 mb-4">Members</h2>
+          <div className="w-24 h-1 bg-dark-blue-800 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">IST Lab의 우수한 연구원들을 소개합니다.</p>
         </div>
 
         {/* Professor Section */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-blue-700 mb-8 text-center">Professor</h3>
+          <h3 className="text-2xl font-bold text-dark-blue-800 mb-8 text-center">Professor</h3>
           <div className="flex justify-center">
             <div className="bg-white rounded-lg shadow-xl p-8 max-w-sm">
               <div className="text-center">
@@ -57,7 +57,7 @@ export default function MembersSection() {
                   />
                 </div>
                 <h4 className="text-2xl font-bold text-gray-800 mb-2">{professor.name}</h4>
-                <p className="text-blue-600 font-medium mb-4">{professor.title}</p>
+                <p className="text-dark-blue-700 font-medium mb-4">{professor.title}</p>
                 <div className="space-y-2 text-sm text-gray-600">
                   <div className="flex items-center justify-center">
                     <GraduationCap className="w-4 h-4 mr-2" />
@@ -77,10 +77,10 @@ export default function MembersSection() {
 
         {/* Researchers Section */}
         <div>
-          <h3 className="text-2xl font-bold text-blue-700 mb-8 text-center">Researchers</h3>
+          <h3 className="text-2xl font-bold text-dark-blue-800 mb-8 text-center">Researchers</h3>
           {members.map((category, categoryIndex) => (
             <div key={categoryIndex} className="mb-12">
-              <h4 className="text-xl font-semibold text-blue-600 mb-6">{category.category}</h4>
+              <h4 className="text-xl font-semibold text-dark-blue-700 mb-6">{category.category}</h4>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {category.people.map((person, personIndex) => (
                   <div
@@ -94,7 +94,7 @@ export default function MembersSection() {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <h5 className="text-lg font-bold text-blue-700 mb-2">{person.name}</h5>
+                    <h5 className="text-lg font-bold text-dark-blue-800 mb-2">{person.name}</h5>
                     <p className="text-gray-600 mb-3">{category.category}</p>
                     <div className="space-y-1 text-sm text-gray-600">
                       <div className="flex items-center justify-center">
@@ -116,14 +116,14 @@ export default function MembersSection() {
         </div>
 
         {/* Join Us Section */}
-        <div className="mt-16 bg-blue-50 rounded-lg p-8 text-center">
-          <h3 className="text-2xl font-bold text-blue-700 mb-4">Join Our Team</h3>
+        <div className="mt-16 bg-dark-blue-50 rounded-lg p-8 text-center">
+          <h3 className="text-2xl font-bold text-dark-blue-800 mb-4">Join Our Team</h3>
           <p className="text-gray-700 mb-6">IST Lab에서 함께 연구하고 성장할 새로운 연구원을 모집합니다.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800 transition-colors">
+            <button className="bg-dark-blue-800 text-white px-6 py-3 rounded-lg hover:bg-dark-blue-900 transition-colors">
               대학원생 모집 정보
             </button>
-            <button className="border border-blue-700 text-blue-700 px-6 py-3 rounded-lg hover:bg-blue-700 hover:text-white transition-colors">
+            <button className="border border-dark-blue-800 text-dark-blue-800 px-6 py-3 rounded-lg hover:bg-dark-blue-800 hover:text-white transition-colors">
               학부연구생 지원
             </button>
           </div>

@@ -95,8 +95,8 @@ export default function PublicationsSection() {
     <section className="py-16 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-blue-700 mb-4">Publications</h2>
-          <div className="w-24 h-1 bg-blue-700 mx-auto mb-6"></div>
+          <h2 className="text-4xl font-bold text-dark-blue-800 mb-4">Publications</h2>
+          <div className="w-24 h-1 bg-dark-blue-800 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             IST Lab에서 발표한 논문과 연구 성과를 소개합니다.
           </p>
@@ -106,7 +106,7 @@ export default function PublicationsSection() {
           <div className="mb-6 text-right">
             <button
               onClick={() => setIsAddModalOpen(true)}
-              className="bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition-colors font-medium flex items-center"
+              className="bg-dark-blue-800 text-white px-4 py-2 rounded-lg hover:bg-dark-blue-900 transition-colors font-medium flex items-center"
             >
               <Plus className="w-4 h-4 mr-2" /> 논문 등록
             </button>
@@ -122,7 +122,7 @@ export default function PublicationsSection() {
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
                 className={`flex items-center px-4 py-2 rounded-lg font-medium transition-colors ${
-                  activeTab === tab.id ? "bg-blue-700 text-white" : "text-gray-600 hover:text-blue-700"
+                  activeTab === tab.id ? "bg-dark-blue-800 text-white" : "text-gray-600 hover:text-dark-blue-800"
                 }`}
               >
                 <IconComponent className="w-4 h-4 mr-2" />
@@ -152,11 +152,12 @@ export default function PublicationsSection() {
                     <span className="text-sm text-gray-500">{pub.year}</span>
                   </div>
                   <h3 className="text-xl font-bold text-blue-700 mb-3">{pub.title}</h3>
+                  <h3 className="text-xl font-bold text-dark-blue-800 mb-3">{pub.title}</h3>
                   <p className="text-gray-600 mb-2"><strong>저자:</strong> {pub.authors}</p>
                   <p className="text-gray-600"><strong>게재지:</strong> {pub.venue}</p>
                 </div>
                 <div className="mt-4 md:mt-0 md:ml-6">
-                  <button className="bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition-colors">
+                  <button className="bg-dark-blue-800 text-white px-4 py-2 rounded-lg hover:bg-dark-blue-900 transition-colors">
                     자세히 보기
                   </button>
                 </div>
@@ -184,7 +185,7 @@ export default function PublicationsSection() {
             >
               <X className="w-6 h-6" />
             </button>
-            <h3 className="text-xl font-bold text-blue-700 mb-4">논문 등록</h3>
+            <h3 className="text-xl font-bold text-dark-blue-800 mb-4">논문 등록</h3>
             <form className="space-y-4" onSubmit={handleSubmit}>
               <input name="title" type="text" placeholder="논문 제목" required className="w-full border px-3 py-2 rounded" />
               <input name="authors" type="text" placeholder="저자" required className="w-full border px-3 py-2 rounded" />
@@ -214,7 +215,7 @@ export default function PublicationsSection() {
                 >
                   취소
                 </button>
-                <button type="submit" className="px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-800">
+                <button type="submit" className="px-4 py-2 bg-dark-blue-800 text-white rounded hover:bg-dark-blue-900">
                   등록
                 </button>
               </div>
